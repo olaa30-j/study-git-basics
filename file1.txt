@@ -1,2 +1,4 @@
 File 1 contents added
 
+File 1 Modified in Branch_A
+
