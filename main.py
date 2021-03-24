@@ -5,7 +5,10 @@ from flask_sqlalchemy import SQLAlchemy
 # CONFIG
 app = Flask(__name__)
 api = Api(app)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///usersDB.db"
+
+app.config[
+    "SQLALCHEMY_DATABASE_URI"
+] = "mysql+pymysql://user:password@localhost/database_name"
 db = SQLAlchemy(app)
 
 
